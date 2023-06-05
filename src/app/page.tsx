@@ -24,32 +24,7 @@ import Plx from "react-plx";
 export default function page() {
   return (
     <div>
-      <Plx
-        parallaxData={[
-          {
-            start: 0,
-            end: 700,
-            easing: "easeIn",
-            properties: [
-              {
-                startValue: 1,
-                endValue: 1.6,
-                property: "scale"
-              }
-            ]
-          }
-        ]}
-        style={{
-          position: "fixed",
-          left: 0,
-          top: 0,
-          width: "100%",
-          zIndex: 100
-        }}
-      >
-        <img style={{ width: "100%" }} src="bg.png" alt="foreground" />
-      </Plx>
-      <Plx
+       <Plx
         parallaxData={[
           {
             start: 0,
@@ -72,6 +47,32 @@ export default function page() {
       >
         <img style={{ width: "100%" }} src="background.jpg" alt="background" />
       </Plx>
+      <Plx
+        parallaxData={[
+          {
+            start: 0,
+            end: 700,
+            easing: "easeIn",
+            properties: [
+              {
+                startValue: 1,
+                endValue: 1.6,
+                property: "scale"
+              }
+            ]
+          }
+        ]}
+        style={{
+          position: "fixed",
+          left: 0,
+          top: 0,
+          width: "100%",
+          
+        }}
+      >
+        <img style={{ width: "100%" }} src="bg.png" alt="foreground" />
+      </Plx>
+     
       <Plx
         parallaxData={[
           {
