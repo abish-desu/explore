@@ -29,6 +29,7 @@ export default function page() {
           {
             start: 0,
             end: 800,
+            easing: "easeIn",
             properties: [
               {
                 startValue: 1,
@@ -40,12 +41,13 @@ export default function page() {
         ]}
         style={{  
           position: "fixed",
-          left: 0,
-          top: 0,
+        
           width: "100%"
         }}
       >
-        <img style={{ width: "100%" }} src="background.jpg" alt="background" />
+        <img style={{ width: "100%",
+        
+      }} src="background.jpg" alt="background" />
       </Plx>
       <Plx
         parallaxData={[
@@ -64,8 +66,7 @@ export default function page() {
         ]}
         style={{
           position: "fixed",
-          left: 0,
-          top: 0,
+         
           width: "100%",
           
         }}
@@ -77,7 +78,8 @@ export default function page() {
         parallaxData={[
           {
             start: 0,
-            end: 400,
+            end: 600,
+            easing: "easeIn",
             properties: [
               {
                 startValue: 1,
@@ -103,24 +105,7 @@ export default function page() {
           alt="Goonies"
         />
       </Plx>
-      <div
-        style={{
-          position: "fixed",
-          left: 0,
-          top: 0,
-          zIndex: 200,
-          paddingTop: "56%",
-          height: "400vh",
-          width: "100%"
-        }}
-      >
-        <div
-          style={{
-            background: "#000",
-            height: "100%"
-          }}
-        ></div>
-      </div>
+
     </div>
   );
 }
