@@ -40,14 +40,10 @@ export default function page() {
           }
         ]}
         style={{  
-          position: "fixed",
-        
-          width: "100%"
+          position: "fixed"
         }}
       >
-        <img style={{ width: "100%",
-        
-      }} src="background.jpg" alt="background" />
+        <img src="background.jpg" alt="background" />
       </Plx>
       <Plx
         parallaxData={[
